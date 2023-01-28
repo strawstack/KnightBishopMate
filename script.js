@@ -23,16 +23,16 @@ function nav(kingWhite, bishopWhite, boardSide) {
         },
         false: { // King black
             true: [ // Bishop White
-                "3kbn2/8/8/8/3K4/8/8/8_b_-_-_0_1?color=black",
-                "8/8/7k/7b/3K3n/8/8/8_b_-_-_0_1?color=black",
-                "8/8/8/3K4/8/8/8/3bkn2_b_-_-_0_1?color=black",
-                "8/8/b7/n7/k3K3/8/8/8_b_-_-_0_1?color=black"
+                "8/8/8/3K4/8/8/8/3bkn2_b_-_-_0_1?color=black", // t
+                "8/8/b7/n7/k3K3/8/8/8_b_-_-_0_1?color=black",  // r
+                "3kbn2/8/8/8/3K4/8/8/8_b_-_-_0_1?color=black", // b
+                "8/8/7k/7b/3K3n/8/8/8_b_-_-_0_1?color=black"   // l
             ],
             false: [
-                "2nbk3/8/8/8/4K3/8/8/8_b_-_-_0_1?color=black",
-                "8/8/8/3K3n/7b/7k/8/8_b_-_-_0_1?color=black",
                 "8/8/8/8/4K3/8/8/3nbk2_b_-_-_0_1?color=black",
-                "8/8/8/b7/n2K4/k7/8/8_b_-_-_0_1?color=black"
+                "8/8/8/b7/n2K4/k7/8/8_b_-_-_0_1?color=black",
+                "2nbk3/8/8/8/4K3/8/8/8_b_-_-_0_1?color=black",
+                "8/8/8/3K3n/7b/7k/8/8_b_-_-_0_1?color=black"
             ]
         }
     };
