@@ -1,3 +1,3 @@
 # KnightBishopMate
 
-A web template.
+Try to mate with a bishop and a knight from several challenging board positions.
