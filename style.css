@@ -9,5 +9,30 @@ html, body {
 body {
     font-family: 'Nunito', sans-serif;
     font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
     background: lightgrey;
+    padding: 30px;
+}
+
+.select-area {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.randomNav {
+    background: yellow;
+}
+
+li>div {
+    color: #333;
+    padding: 5px 10px;
+    display: inline-block;
+}
+
+li>div:hover {
+    color: #FFF;
+    cursor: pointer;
+    background: #333;
 }

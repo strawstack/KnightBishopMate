@@ -4,11 +4,45 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Web Template</title>
+        <title>KnightBishopMate</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div>Web Template</div>
+        <h1>KnightBishopMate</h1>
+
+        <ul>
+            <li>
+                <div onClick="randomNav()" class="randomNav">
+                    Random Position
+                </div>
+            </li>
+        </ul>
+
+        <ul>
+            <li><div onClick="nav(true, true, 0)">White, Light, Top</div></li>
+            <li><div onClick="nav(true, true, 1)">White, Light, Right</div></li>
+            <li><div onClick="nav(true, true, 2)">White, Light, Bottom</div></li>
+            <li><div onClick="nav(true, true, 3)">White, Light, Left</div></li>
+        </ul>
+        <ul>
+            <li><div onClick="nav(true, false, 0)">White, Dark, Top</div></li>
+            <li><div onClick="nav(true, false, 1)">White, Dark, Right</div></li>
+            <li><div onClick="nav(true, false, 2)">White, Dark, Bottom</div></li>
+            <li><div onClick="nav(true, false, 3)">White, Dark, Left</div></li>
+        </ul>
+
+        <ul>
+            <li><div onClick="nav(false, true, 0)">Black, Light, Top</div></li>
+            <li><div onClick="nav(false, true, 1)">Black, Light, Right</div></li>
+            <li><div onClick="nav(false, true, 2)">Black, Light, Bottom</div></li>
+            <li><div onClick="nav(false, true, 3)">Black, Light, Left</div></li>
+        </ul>
+        <ul>
+            <li><div onClick="nav(false, false, 0)">Black, Dark, Top</div></li>
+            <li><div onClick="nav(false, false, 1)">Black, Dark, Right</div></li>
+            <li><div onClick="nav(false, false, 2)">Black, Dark, Bottom</div></li>
+            <li><div onClick="nav(false, false, 3)">Black, Dark, Left</div></li>
+        </ul>
         <script src="script.js"></script>
     </body>
 </html>
