@@ -1,3 +1,3 @@
-# WebTemplate
+# KnightBishopMate
 
 A web template.
