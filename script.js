@@ -4,6 +4,10 @@
 
 })();
 
+const other = [
+    "8/8/8/K7/1nk5/8/8/1b6_b_-_-_15_61?color=white",
+];
+
 function nav(kingWhite, bishopWhite, boardSide) {
     const root = "https://lichess.org/editor/";
     const lookup = {
@@ -42,8 +46,13 @@ function nav(kingWhite, bishopWhite, boardSide) {
 }
 
 function randomNav() {
-    const kingWhite   = (Math.random() < 0.5) ? true : false;
-    const bishopWhite = (Math.random() < 0.5) ? true : false;
-    const boardSide   = Math.floor(Math.random() * 4);
-    nav(kingWhite, bishopWhite, boardSide);
+    const chance = 16 / (16 + other.length);
+    if (Math.random() < chance) {
+        const kingWhite   = (Math.random() < 0.5) ? true : false;
+        const bishopWhite = (Math.random() < 0.5) ? true : false;
+        const boardSide   = Math.floor(Math.random() * 4);
+        nav(kingWhite, bishopWhite, boardSide);
+    } else {
+        return other[Math.floor(Math.random() * other.length)];
+    }
 }
