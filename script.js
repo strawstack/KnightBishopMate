@@ -8,6 +8,23 @@ const other = [
     "8/8/8/K7/1nk5/8/8/1b6_b_-_-_15_61?color=white",
 ];
 
+function navFourth(kingWhite, bishopWhite, boardSide) {
+    const root = "https://lichess.org/editor/";
+    const lookup = {
+        true: { // King white
+            true: [ // Bishop White
+                "4k3/3N4/3K4/3B4/8/8/8/8_w_-_-_0_1?color=white", // Top
+                "8/8/8/8/4BKN1/7k/8/8_w_-_-_0_1?color=white", // Right
+                "8/8/8/8/4B3/4K3/4N3/3k4_w_-_-_0_1?color=white", // Bottom
+                "8/8/k7/1NKB4/8/8/8/8_w_-_-_0_1?color=white"  // Left
+            ]
+        }
+    };
+
+    let targetUrl = `${root}${lookup[kingWhite][bishopWhite][boardSide]}`;
+    window.open(targetUrl, '_blank');
+}
+
 function nav(kingWhite, bishopWhite, boardSide) {
     const root = "https://lichess.org/editor/";
     const lookup = {
